@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FIRE GIRLS — Cinematic Pipeline</title>
+  <meta name="description" content="Fire Girls cinematic pipeline prototype: hero, about, team, horizontal ScrollTrigger, poster, video and audio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="topbar" aria-label="Главная навигация">
+    <a class="brand" href="#hero"><span>FIRE</span> GIRLS</a>
+    <nav class="topnav" aria-label="Menu">
+      <a href="about.html"><span>AB</span>OUT US</a>
+      <a href="media.html"><span>ME</span>DIA</a>
+      <a href="events.html"><span>EV</span>ENTS</a>
+      <a href="merch.html"><span>ME</span>RCH</a>
+      <a href="bookings.html"><span>BO</span>OKINGS</a>
+      <button class="plain-btn" type="button" aria-label="Language switcher">RU / EN</button>
+      <button class="burger" id="menuOpen" type="button" aria-label="Open menu"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <aside class="menu-curtains" id="siteMenu" aria-hidden="true">
+    <div class="menu-glass menu-glass-left"></div>
+    <div class="menu-glass menu-glass-right"></div>
+    <div class="menu-side menu-side-left"><span>FIRE</span> GIRLS FIRE GIRLS</div>
+    <div class="menu-side menu-side-right"><span>GIRLS</span> FIRE GIRLS FIRE</div>
+    <button class="menu-close" id="menuClose" type="button">Close</button>
+    <div class="menu-center">
+      <p>MATTE GLASS MENU</p>
+      <h2><span>FIRE</span> GIRLS</h2>
+      <nav>
+        <a href="about.html"><span>AB</span>OUT US</a>
+        <a href="media.html"><span>ME</span>DIA</a>
+        <a href="events.html"><span>EV</span>ENTS</a>
+        <a href="merch.html"><span>ME</span>RCH</a>
+        <a href="bookings.html"><span>BO</span>OKINGS</a>
+      </nav>
+      <div class="menu-socials">YouTube · Instagram · Telegram · Spotify</div>
+    </div>
+  </aside>
+
+  <main>
+    <section class="hero-scene" id="hero" aria-label="Fire Girls hero scene">
+      <div class="scene-camera" id="sceneCamera">
+        <img class="layer layer-bg" src="assets/img/hero/back.png" alt="Светлый индустриальный фон" draggable="false" />
+        <img class="layer layer-mid" src="assets/img/hero/level-2.png" alt="Второй уровень сцены" draggable="false" />
+        <img class="layer layer-girl layer-left" src="assets/img/hero/level-3_left.png" alt="Участница группы слева" draggable="false" />
+        <img class="layer layer-girl layer-right" src="assets/img/hero/level-3_right.png" alt="Участница группы справа" draggable="false" />
+        <img class="layer layer-girl layer-front" src="assets/img/hero/level-4.png" alt="Вокалистка на переднем плане" draggable="false" />
+        <div class="hero-title" aria-hidden="true"><span>FIRE</span> GIRLS</div>
+      </div>
+      <div class="hero-copy">
+        <p class="kicker">PURE STAGE PRESSURE</p>
+        <p>Symphonic metal from the heart</p>
+      </div>
+      <a class="scroll-next" href="#about">SCROLL</a>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-title"><span>ABOUT</span><strong>US</strong></div>
+      <div class="about-copy reveal-up">
+        <p><span>FIRE GIRLS</span> — cinematic <b>metalcore band</b>, built on pressure, live contact and industrial beauty.</p>
+        <p>Four girls — <span>vocal</span>, <span>guitar</span>, <span>bass</span> and <span>drums</span> — charge the stage with direct energy.</p>
+        <p>For those who love <span>heavy style</span>, strong visuals, loud guitars and pure stage fire.</p>
+      </div>
+    </section>
+
+
+
+    <section class="projection-section dark" id="projection-one">
+      <div class="projection-bg"><img src="assets/img/bg-city.jpg" alt="Dark city background"></div>
+      <div class="projection-copy reveal-up">
+        <p>3D PROJECTION</p>
+        <h2 class="projection-title"><span>BLACK</span> CITY</h2>
+        <strong>One background, separate foreground figures and visible depth.</strong>
+        <em>Mouse-controlled scene. No automatic spin.</em>
+      </div>
+      <div class="projection-scene">
+        <img class="projection-figure" src="assets/img/group.png" alt="Fire Girls group projection">
+      </div>
+    </section>
+
+    <section class="projection-section ivory" id="projection-two">
+      <div class="projection-bg"><img src="assets/img/bg-city.jpg" alt="Dark city background"></div>
+      <div class="projection-scene">
+        <img class="projection-figure" src="assets/img/group-stage.png" alt="Fire Girls stage projection">
+      </div>
+      <div class="projection-copy reveal-up">
+        <p>STAGE REFLECTION</p>
+        <h2 class="projection-title"><span>LIVE</span> FORCE</h2>
+        <strong>Four visual layers for the next pages: background, group, text and foreground motion.</strong>
+        <em>Use this block as a reusable 3D page module.</em>
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <div class="team-bg-title"><span>FIRE</span> TEAM</div>
+      <div class="team-head reveal-up"><p>OUR TEAM</p><h2><span>FIRE</span> GIRLS</h2></div>
+      <div class="team-grid">
+        <a class="team-card reveal-up" href="vocal.html"><img src="assets/img/team/vocal.png" alt="Наталья Огнева"><div class="team-cursor"><span class="top">FIRE</span><strong>Нажми</strong><span class="bottom">GIRLS</span></div><h3>Наталья Огнева</h3><p>Vocal · Огонёк</p></a>
+        <a class="team-card reveal-up" href="guitar.html"><img src="assets/img/team/guitar.png" alt="Евгения Николаева"><div class="team-cursor"><span class="top">FIRE</span><strong>Нажми</strong><span class="bottom">GIRLS</span></div><h3>Евгения Николаева</h3><p>Guitar · Николь</p></a>
+        <a class="team-card reveal-up" href="bass.html"><img src="assets/img/team/bass.png" alt="Светлана Козырева"><div class="team-cursor"><span class="top">FIRE</span><strong>Нажми</strong><span class="bottom">GIRLS</span></div><h3>Светлана Козырева</h3><p>Bass · Козырь</p></a>
+        <a class="team-card reveal-up" href="drums.html"><img src="assets/img/team/drums.png" alt="Ольга Славдина"><div class="team-cursor"><span class="top">FIRE</span><strong>Нажми</strong><span class="bottom">GIRLS</span></div><h3>Ольга Славдина</h3><p>Drums · Слава</p></a>
+      </div>
+    </section>
+
+    <section class="horizontal-section" id="media">
+      <div class="horizontal-sticky">
+        <div class="horizontal-head"><span>SCROLL</span><strong>THREE BLOCKS</strong></div>
+        <div class="horizontal-track" id="horizontalTrack">
+          <article class="h-panel red"><div class="h-arrow">→</div><span>01</span><h2>Events</h2><p>Concert posters, club dates, special shows and stage announcements in one horizontal cinematic frame.</p><img src="assets/img/fg-05.png" alt="Events"></article>
+          <article class="h-panel black"><div class="h-arrow">→</div><span>02</span><h2>Media</h2><p>Videos, photos, backstage frames, rehearsal fragments and visual campaigns for Fire Girls.</p><img src="assets/img/fg-06.png" alt="Media"></article>
+          <article class="h-panel ivory"><div class="h-arrow">↓</div><span>03</span><h2>Concerts</h2><p>Live pressure, heavy sound, red light, black leather and direct audience contact.</p><img src="assets/img/fg-07.png" alt="Concerts"></article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="single-section" id="single">
+      <div class="single-stage">
+        <div class="cd-box">
+          <div class="cd-cover"><img src="assets/img/group-stage.png" alt="Fire Heroes single cover"></div>
+          <div class="cd-disc"></div>
+        </div>
+      </div>
+      <div class="single-copy reveal-up">
+        <p>NEW SINGLE</p>
+        <h2><span>FIRE</span> HEROES</h2>
+        <strong>We are Fire Heroes.</strong>
+        <span>Special exclusive action only through our Telegram channel. Subscribe and follow the new release.</span>
+      </div>
+    </section>
+
+    <section class="poster-section" id="poster">
+      <div class="poster-card reveal-up">
+        <p>CONCERT POSTER</p>
+        <h2><span>FIRE</span> GIRLS</h2>
+        <div class="poster-info">
+          <strong>Morgunov Hall</strong>
+          <span>Nikodimov City</span>
+          <span>19:00 · Tuesday · 2034</span>
+        </div>
+      </div>
+      <img src="assets/img/fg-08.png" alt="Афиша концерта Fire Girls">
+    </section>
+
+    <section class="video-section" id="video">
+      <div class="video-box reveal-up"><video src="assets/video/firegirls-video.mp4" controls poster="assets/img/fg-09.png"></video></div>
+      <div class="video-copy reveal-up">
+        <p>NEW VIDEO</p>
+        <h2><span>FIRE</span> GIRLS<br>LIVE VISUAL</h2>
+        <strong>60% video / 40% editorial text.</strong>
+        <span>Крупный видеоблок после горизонтального скролла: чистая композиция, без лишнего затемнения.</span>
+      </div>
+    </section>
+
+    <section class="audio-section" id="audio">
+      <div class="audio-title reveal-up"><p>NEW SINGLE</p><h2><span>BURN</span> IT ALL</h2></div>
+      <div class="audio-player reveal-up">
+        <button class="audio-btn" id="audioBtn" type="button">PLAY</button>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <audio id="audio" src="assets/audio/firegirls-single.mp3"></audio>
+      </div>
+    </section>
+
+    <section class="photo-gallery-section" id="photos">
+      <h2><span>BIG</span> PHOTOS</h2>
+      <div class="photo-gallery-grid">
+        <img src="assets/img/fg-05.png" alt="Fire Girls photo 1">
+        <img src="assets/img/fg-06.png" alt="Fire Girls photo 2">
+        <img src="assets/img/fg-07.png" alt="Fire Girls photo 3">
+      </div>
+    </section>
+
+    <footer class="footer"><div><span>FIRE</span> GIRLS</div></footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
